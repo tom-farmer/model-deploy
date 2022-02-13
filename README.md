@@ -18,3 +18,7 @@ Goals for this project
     - Flask for api
   - docker
   - git
+
+To Do:
+ - Make training a python script
+ - Make inference test use the test data
