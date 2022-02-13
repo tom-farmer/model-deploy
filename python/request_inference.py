@@ -3,15 +3,16 @@ import json
 
 def main():
     """
-    Assumes that the flask app is running locally already
+    Sends an http post request that gets the predicted value of a house
+    Assumes that the flask app is running locally already on port 5000
     """
-    # app running locally on port 5000
     url = 'http://localhost:5000/predict'
 
-    preds = {"OverallQual":10,
+    preds = {"OverallQual":6,
              "OverallCond":5,
              "TotalBsmtSF":1000,
-             "FullBath":4}
+             "FullBath":4,
+             "garbage_var":100}
 
     r = requests.post(url, json = preds)
 

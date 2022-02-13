@@ -16,7 +16,7 @@ def predict():
     predictors_df = pd.DataFrame(predictors, index = [0])
 
     print(predictors_df)
-    house_value = model.predict(predictors_df)
+    house_value = model.predict(predictors_df[var_list])
 
     return({"Predicted_House_Value":house_value[0]})
 
