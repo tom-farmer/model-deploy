@@ -1,8 +1,14 @@
-Goals for this project using AWS SageMaker:
+Goals for this project
 
  - do some data exploration in a notebook
- - pre-process a large dataset  to training data
- - train model using AWS training and BYO container method
- - deploy model using AWS inference and validate deployment
+ - train a model and write out a model artifact (script or nb)
+ - write a script to respond to a request with flask
+ - deploy model using docker and request inference from docker container
+
+Potential Resource:
+https://sagemaker-examples.readthedocs.io/en/latest/advanced_functionality/scikit_bring_your_own/scikit_bring_your_own.html
 
 
+Don't forget:
+ - dockerfile
+ - conda env file for jupyter/python scripts?  use requirements.txt?
