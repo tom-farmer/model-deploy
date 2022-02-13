@@ -12,3 +12,5 @@ https://sagemaker-examples.readthedocs.io/en/latest/advanced_functionality/sciki
 Don't forget:
  - dockerfile
  - conda env file for jupyter/python scripts?  use requirements.txt?
+
+ Data is in data/ directory that isn't included in the git repo.  The data can be found here:https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data
