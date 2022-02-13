@@ -14,7 +14,6 @@ def main():
              "FullBath":3,
              "garbage_var":100}
 
-
     r = requests.post(url, json = preds)
     print(r.json())
 
