@@ -8,14 +8,14 @@ def main():
     """
     url = 'http://localhost:5000/predict'
 
-    preds = {"OverallQual":6,
+    preds = {"OverallQual":5,
              "OverallCond":5,
              "TotalBsmtSF":1000,
-             "FullBath":4,
+             "FullBath":3,
              "garbage_var":100}
 
-    r = requests.post(url, json = preds)
 
+    r = requests.post(url, json = preds)
     print(r.json())
 
 
