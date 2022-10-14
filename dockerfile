@@ -11,7 +11,7 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86
 ENV PATH=$CONDA_DIR/bin:$PATH
 
 COPY requirements.txt /tmp/requirements.txt
-RUN conda create --name deploy --file /tmp/requirements.txt
+RUN conda create --name deploy --file /tmp/spec-file.txt
 RUN conda activate deploy
 
 COPY ./models /code/models
