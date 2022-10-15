@@ -11,7 +11,7 @@
 ##Technologies used in this demo:
   - Local Jupyter Notebooks
   - Conda for package management
-  - Python
+  - Python 3.8
     - Pandas for data manipulation
     - Scikit-Learn for modeling
     - joblib for object serialization
@@ -24,8 +24,10 @@
  - Make inference test use the test data
 
 ##Key Commands:
- - Build docker image:
+ - build image from git:
   - `docker build https://github.com/tom-farmer/model-deploy.git#main`
+ - build image from local:
+  - `docker build -t python/model_deploy:1.0 .`
 
 ## Resources:
  - https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#building-identical-conda-environments
