@@ -10,4 +10,4 @@ COPY model_inference.py /code/model_inference.py
 
 WORKDIR /code
 
-CMD python3 model_inference.py
+CMD gunicorn --bind 0.0.0.0:5000 model_inference:app
