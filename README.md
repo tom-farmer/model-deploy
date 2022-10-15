@@ -1,6 +1,6 @@
-#Simple Containerized Model Deployment Stack
+# Simple Containerized Model Deployment Stack
 
-##Goals for this project
+## Goals for this project
  - Perform data exploration in a notebook
  - train a model and write out a serialized model artifact
  - write a script to respond to an inference request with flask using the serialized model
@@ -8,7 +8,7 @@
 
  Data is in data/ directory that isn't included in the git repo.  The data can be found here: https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data
 
-##Technologies used in this demo:
+## Technologies used in this demo:
   - Local Jupyter Notebooks
   - Conda for package management
   - Python 3.8
@@ -21,11 +21,11 @@
   - AWS
     - ECR: registered container to [public repository](https://gallery.ecr.aws/h8j7v9c1/tomfarmer)
 
-##To Do:
+## To Do:
  - Make training a python script
  - Make inference test use the test data
 
-##Key Commands:
+## Key Commands:
  - build image from git:
   - `docker build https://github.com/tom-farmer/model-deploy.git#main`
  - build image from local:
