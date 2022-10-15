@@ -18,6 +18,8 @@
     - Flask for api
   - docker
   - git
+  - AWS
+    - ECR: registered container to [public repository](https://gallery.ecr.aws/h8j7v9c1/tomfarmer)
 
 ##To Do:
  - Make training a python script
@@ -28,6 +30,9 @@
   - `docker build https://github.com/tom-farmer/model-deploy.git#main`
  - build image from local:
   - `docker build -t python/model_deploy:1.0 .`
+ - run image first time:
+  - docker run -d -P python/model_deploy:2.0
+  - this does something weird with the ports, may need to specify them explicitly at some point
 
 ## Resources:
  - https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#building-identical-conda-environments

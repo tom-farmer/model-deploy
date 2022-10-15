@@ -9,7 +9,7 @@ test = pd.read_csv('./data/test.csv')
 # Assume that whoever is requesting knows the data types and variable names
 # to send to the API
 load("./models/model1_predictors_metadata.joblib")
-url = 'http://localhost:5000/predict'
+url = 'http://localhost:55001/predict'
 
 def main():
     custom_data_request()
@@ -26,7 +26,8 @@ def custom_data_request():
              "OverallCond":int(5),
              "TotalBsmtSF":1000,
              "FullBath":3,
-             "YearBuilt":1993}
+             "YearBuilt":1993,
+             "garbagevar":7598}
 
     r = requests.post(url, json = preds)
     print(r.json())
